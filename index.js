@@ -1,16 +1,13 @@
 
-const btn=document.getElementById('btn');
-const container=document.getElementById('container');
-btn.addEventListener('click',()=>{
-    createNotification();
-});
-function createNotification(){
-    const notify=document.createElement('div');
-    notify.classList.add('toast')
-    notify.innerText='hows the josh'
-    container.appendChild(notify);
-    setTimeout(()=>{
-        notify.remove();
-    },3000);
 
+const text='hii sir chhotu ram institute of engineering and technology';
+let index=0;
+function demofunction(){
+    document.body.innerText=text.slice(0,index);
+    index++;
+    if(index>text.length-1)
+   {
+       index=0;
+   }
 }
+setInterval(demofunction,100);
