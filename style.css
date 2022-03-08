@@ -5,46 +5,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-margin: 0;
+    margin: 0;
     min-height: 100vh;
 }
+#container{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+.toast{
+    padding: 2rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 2px solid blueviolet;
+    margin: 1rem;
+}
 button{
-    background-color: green;
-    border: none;
+    background-color: blueviolet;
     color: white;
-    top: 20px;
-    right: 20px;
-    padding: 1rem;
-    position: fixed;
-    transition: transform 0.5s ease-in-out;
-}
-button.active{
-    transform: translate(-100px);
-
-}
-nav.active{
-    transform: translateX(0);
-}
-nav{
-    background-color:violet ;
-    position: fixed;
-    
-    top: 0;
-    right: 0;
-    height: 100vh;
- padding: 2rem;transform: translate(100%);
-
-
-}
-nav ul{
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-}
-nav ul li{
-    padding:2rem 0;
-}
-nav a{
-    text-decoration: none;
-    color: white;
+    border: 2px solid green;
+    /* border-radius:20px solid red; */
+    border-radius: 20px;
 }

@@ -1,7 +1,16 @@
-const btn=document.getElementById('btn')
-const nav=document.getElementById('nav')
+
+const btn=document.getElementById('btn');
+const container=document.getElementById('container');
 btn.addEventListener('click',()=>{
-    nav.classList.toggle('active')
-    btn.classList.toggle('active')
-    
-})
+    createNotification();
+});
+function createNotification(){
+    const notify=document.createElement('div');
+    notify.classList.add('toast')
+    notify.innerText='hows the josh'
+    container.appendChild(notify);
+    setTimeout(()=>{
+        notify.remove();
+    },3000);
+
+}
